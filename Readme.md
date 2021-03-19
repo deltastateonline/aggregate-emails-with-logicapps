@@ -62,43 +62,51 @@ In any traditional programming, this is quite easy, see pseudocode,
 ```
 ## Logic App Implementation
 
-- Create an array to store all the email addresses.
-![alt text](images\01.png "Initialize an array to store all email addresses")
+Create an array to store all the email addresses.
+
+![alt text](images/01.png "Initialize an array to store all email addresses")
 
 
-- Create another array which will store only the unique email addresses.
-![alt text](images\02.png "Initialize an array to store all unique email addresses")
+Create another array which will store only the unique email addresses.
+
+![alt text](images/02.png "Initialize an array to store all unique email addresses")
 
 
-- Get all the entities , use a schema to have access to all the elements of the json result.
-![alt text](images\03.png "Get all the entities by partition key.")
+Get all the entities , use a schema to have access to all the elements of the json result.
 
-- Loop thru the results and append the email addresses to the all_email_addresses array.
-![alt text](images\04.png "Loop thru results")
+![alt text](images/03.png "Get all the entities by partition key.")
 
-- Create an array of unique email addresses, using the Union data operation.
-![alt text](images\05.png "Get unique email address only.")
+Loop thru the results and append the email addresses to the all_email_addresses array.
+
+![alt text](images/04.png "Loop thru results")
+
+Create an array of unique email addresses, using the Union data operation.
+
+![alt text](images/05.png "Get unique email address only.")
 
 
-- Next Loop thru the unique email addresses and create a filtered array using the current email address as the filter value.
+Next Loop thru the unique email addresses and create a filtered array using the current email address as the filter value.
 
 A foreach loop could be used to itterate thru the original results and count the number of emails which match.
 
 However this approach requires the concurrency flag to be set and the loop has to be done sequentially. 
 
 This can result in an O(n*m) complexity. The original implementation using this approach took 1m to loop thru 9 unique email address from 26 elements in the result set.
-![alt text](images\06.png "Loop thru unique email addresses and create filtered array")
 
-- Compose a result element , with the count value equal to the lenght of the body from the previous step.
-![alt text](images\08.png "Compose result elment")
+![alt text](images/06.png "Loop thru unique email addresses and create filtered array")
+
+Compose a result element , with the count value equal to the lenght of the body from the previous step.
+
+![alt text](images/08.png "Compose result elment")
 
 
-- Append the result element into a final result array
-![alt text](images\09.png "Compose result elment")
+Append the result element into a final result array.
+
+![alt text](images/09.png "Compose result elment")
 
 
 **Below are the input and output json files used in this implementation**
 
-[Input json](images\input.json)
+[Input json](images/input.json)
 
-[Output json](images\output.json)
+[Output json](images/output.json)
