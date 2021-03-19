@@ -1,0 +1,56 @@
+[
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "tylia.mcbride@vehicle_pty_ltd.com.au",
+        "count": "4",
+        "useremail": "tylia.mcbride@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "tucker.taylor@vehicle_pty_ltd.com.au",
+        "count": "1",
+        "useremail": "tucker.taylor@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "simonm@vehicle_pty_ltd.com.au",
+        "count": "12",
+        "useremail": "simonm@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "gail.huffy@vehicle_pty_ltd.com.au",
+        "count": "3",
+        "useremail": "gail.huffy@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "ashley.husky@vehicle_pty_ltd.com.au",
+        "count": "1",
+        "useremail": "ashley.husky@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "chris.ward@vehicle_pty_ltd.com.au",
+        "count": "1",
+        "useremail": "chris.ward@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "sarah.mcneela@vehicle_pty_ltd.com.au",
+        "count": "1",
+        "useremail": "sarah.mcneela@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "basil.williamson@vehicle_pty_ltd.com.au",
+        "count": "1",
+        "useremail": "basil.williamson@vehicle_pty_ltd.com.au"
+    },
+    {
+        "PartitionKey": "2021-03-18",
+        "RowKey": "joe.ghobril@vehicle_pty_ltd.com.au",
+        "count": "2",
+        "useremail": "joe.ghobril@vehicle_pty_ltd.com.au"
+    }
+]
